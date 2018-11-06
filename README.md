@@ -9,5 +9,5 @@ You will need the following:
 
 - Anchore Engine service: [Anchore](https:;//anchore.com)
 - Slack account: [Slack](https://slack.com)
-- Azure account: [Azure](https://azure.com)
+- Azure account: [Azure](https://azure.microsoft.com)
 
