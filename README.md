@@ -46,3 +46,11 @@ Once the configuration is complete, you will need to activate a subscription, yo
 In this example, I have subscribed to a particular tag and am listening for 'policy_eval' changes. From the documentation: 
 
 "This class of notification is triggered if a Tag to which a user has subscribed has a change in its policy evaluation status. The policy evaluation status of an image can be one of two states: Pass or Fail. If an image that was previously marked as Pass changes status to Fail or vice-versa then the policy update notification will be triggered."
+
+## Azure Function Code
+
+I kept this as minimal as possible in order to keep it open ended. In short, Anchore will be sending out the notification data to the webhook endpoint we've specified, we just need to write some code to consume it, and then send it to Slack. 
+
+You can view the code here: https://raw.githubusercontent.com/valancej/Anchore-Slack-Notifications/master/index.js
+
+Quick note: In the example, the alert to Slack is very basic. However, feel free to experiment with the data that Anchore send out and configure the code to your choosing. 
