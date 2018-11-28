@@ -2,7 +2,7 @@
 
 ## How to configure Slack webhooks to receive Anchore notifications via Azure Functions
 
-With Anchore you can subscribe to TAGs and Images to receive notifications when images are updated, when CVEs are added or removed and when the policy status of an image changes so you can take a proactive approach to ensuring security and compliance. A common alerting tool Anchore users leverage is Slack. 
+With Anchore you can subscribe to TAGs and Images to receive notifications when images are updated, when CVEs are added or removed and when the policy status of an image changes so you can take a proactive approach to ensuring security and compliance. Having the ability to stay on top the notifications above allows for the appropriate methods for remidiation and triage to take place. One of the most common alerting tools Anchore users leverage is Slack. 
 
 In this example, we will walkthrough how to configure Slack webhooks to receive Anchore notifications. We will consume the webhook with an Azure Function and pass the notification data into a Slack channel.
 
@@ -23,7 +23,7 @@ Should look similar to the configuration below (I am just posting to the #genera
 
 ![screenshot](images/slack_config.png)
 
-## Azure Intial Configuration
+## Azure Initial Configuration
 
 Once you have an Azure account, begin by creating a Function App. In this example I will use the following configuration: 
 
