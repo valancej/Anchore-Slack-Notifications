@@ -23,6 +23,9 @@ Once you have an Azure account, begin by creating a Function App. In this exampl
 
 ![Screenshot](images/function_config.png)
 
+Choose In-Portal development environment and then Webhook + API: 
+
+![config](images/create_function_config.png)
 
 ## Anchore Engine Configuration
 
