@@ -43,6 +43,6 @@ Once you have a running Anchore Engine, we need to configure engine to send out 
 
 Once the configuration is complete, you will need to activate a subscription, you can follow the documentation link above for more info on that. 
 
-In this example, I have subscribed to a particular tag and am listening for 'policy_eval' changes. From out documentation: 
+In this example, I have subscribed to a particular tag and am listening for 'policy_eval' changes. From the documentation: 
 
 "This class of notification is triggered if a Tag to which a user has subscribed has a change in its policy evaluation status. The policy evaluation status of an image can be one of two states: Pass or Fail. If an image that was previously marked as Pass changes status to Fail or vice-versa then the policy update notification will be triggered."

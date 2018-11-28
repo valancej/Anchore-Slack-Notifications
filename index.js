@@ -5,10 +5,16 @@ module.exports = function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
     
     if(req) {
-        let slackUrl = 'https://hooks.slack.com/services/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';
-        let text = {
-            "text": "Something happened!!"
-        };
+        let slackUrl = 'https://hooks.slack.com/services/***********'; //Available when you configure incoming webhooks in Slack
+
+        let payload = req.body;
+        context.log(payload)
+
+        let msg = {
+            text: "Anchore Notification: \n" + "Notification Type: " + payload.data.notification_type + "\nUser: " + payload.data.notification_user
+        }; 
+
+        //Feel free to look at the payload data that comes from Anchore and format the Slack alerts to your liking
         
         let requestData = {
             url: slackUrl,
@@ -17,7 +23,7 @@ module.exports = function (context, req) {
             headers: {
                 "content-type": "application/json",
             },
-            body: text
+            body: msg
         };
         
         request(requestData);
