@@ -17,7 +17,7 @@ Configure incoming webhooks to work with the Slack application you would like to
 
 https://api.slack.com/incoming-webhooks
 
-## Azure Functions Configuration
+## Azure Configuration
 
 Once you have an Azure account, begin by creating a Function App. In this example I will use the following configuration: 
 
@@ -26,6 +26,10 @@ Once you have an Azure account, begin by creating a Function App. In this exampl
 Choose In-Portal development environment and then Webhook + API: 
 
 ![config](images/create_function_config.png)
+
+Once the function has been setup, navigate to the integrate tab and edit the configuration: 
+
+![integrate](images/integrate_config.png)
 
 ## Anchore Engine Configuration
 
