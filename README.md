@@ -69,3 +69,7 @@ The CLI command to evaluate an image:tag against the newly activated policy: `an
 This should trigger a notification give I've motified the policy bundles to create two different final actions. In my example, I'm toggling the exposed port 22 in the default bundle between 'WARN' and 'STOP'
 
 Once Anchore has finished evaluating the image against the newly activated policy, a notification should be created and sent out to our Azure Function App. Based on the logic we've written, we will handle the request, and send out a Slack notification to our Slack app that has been set up to receive incoming webhooks. 
+
+You should be able to view the notification in the Slack workspace and channel:
+
+![screen](images/slack_notification.png)
