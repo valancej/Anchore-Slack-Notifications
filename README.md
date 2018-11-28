@@ -17,6 +17,10 @@ Configure incoming webhooks to work with the Slack application you would like to
 
 https://api.slack.com/incoming-webhooks
 
+Should look similar to the configuration below (I am just posting to the #general channel):
+
+![screenshot](images/slack_config.png)
+
 ## Azure Intial Configuration
 
 Once you have an Azure account, begin by creating a Function App. In this example I will use the following configuration: 
