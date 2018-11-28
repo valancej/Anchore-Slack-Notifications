@@ -21,6 +21,7 @@ https://api.slack.com/incoming-webhooks
 
 Once you have an Azure account, begin by creating a Function App. In this example I will use the following configuration: 
 
+![Screenshot](images/function_config.png)
 
 
 ## Anchore Engine Configuration
