@@ -53,4 +53,4 @@ I kept this as minimal as possible in order to keep it open ended. In short, Anc
 
 You can view the code here: https://raw.githubusercontent.com/valancej/Anchore-Slack-Notifications/master/index.js
 
-Quick note: In the example, the alert to Slack is very basic. However, feel free to experiment with the data that Anchore send out and configure the code to your choosing. 
+Quick note: In the example, the alert to Slack is very basic. However, feel free to experiment with the notification data that Anchore sends to Azure and configure the POST data to Slack. 
